@@ -809,9 +809,6 @@ self: super: {
   blaze-html = doJailbreak super.blaze-html;
   int-cast = doJailbreak super.int-cast;
 
-  # Needs QuickCheck <2.10, HUnit <1.6 and base <4.10
-  pointfree = doJailbreak super.pointfree;
-
   # Depends on base <4.12
   # See https://github.com/haskell-hvr/cryptohash-sha512/pull/3
   # , https://github.com/haskell-hvr/cryptohash-sha512/issues/4

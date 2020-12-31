@@ -816,7 +816,7 @@ self: super: {
   # See https://github.com/haskell-hvr/cryptohash-sha512/pull/3
   # , https://github.com/haskell-hvr/cryptohash-sha512/issues/4
   # and https://github.com/haskell-hvr/cryptohash-sha512/pull/5
-  cryptohash-sha512 = doJailbreak super.cryptohash-sha512;
+  cryptohash-sha512 = dontCheck (doJailbreak super.cryptohash-sha512);
 
   # Depends on tasty < 1.x, which we don't have.
   cryptohash-sha256 = doJailbreak super.cryptohash-sha256;

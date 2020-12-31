@@ -222,6 +222,9 @@ self: super: {
 
   });
 
+  # The project by definition uses the network for tests.
+  hnix-store-remote = dontCheck super.hnix-store-remote;
+
   # Fails for non-obvious reasons while attempting to use doctest.
   search = dontCheck super.search;
 
